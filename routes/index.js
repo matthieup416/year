@@ -5,7 +5,7 @@ var router = express.Router()
 router.get('/year', function (req, res, next) {
   const currentDate = new Date()
   const year = currentDate.getYear()
-  res.render('index', { year: year })
+  res.json({ year: year })
 })
 
 module.exports = router
