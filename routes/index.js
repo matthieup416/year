@@ -4,7 +4,7 @@ var router = express.Router()
 /* GET home page. */
 router.get('/year', function (req, res, next) {
   const currentDate = new Date()
-  const year = currentDate.getYear()
+  const year = currentDate.getFullYear()
   res.json({ year: year })
 })
 
